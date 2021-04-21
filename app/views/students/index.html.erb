@@ -1,0 +1,9 @@
+<h1>Coder Students</h1>
+
+<% @students.each do |student| %>
+  <h2>Name: <%= student.name %><%= link_to 'Show', student%></h2>
+<% end %>
+
+<h5> <%= @jackie.email %> </h5>
+
+<p><%= link_to 'New Student', new_student_path %></p>
